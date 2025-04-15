@@ -1,0 +1,11 @@
+1 ?- setof(GC, grandchildOf(GC, elizabeth), Grandchildren).
+Grandchildren = [beatrice, eugenie, harry, james, louise, peter, william, zara].
+
+2 ?- setof(BIL, brotherInLawOf(BIL, diana), BrothersInLaw).
+BrothersInLaw = [andrew, edward].
+
+3 ?- setof(Cousin, firstCousinOf(Cousin, zara), Cousins).
+Cousins = [beatrice, eugenie, harry, james, louise, william].
+
+4 ?- setof(Ancestor, ancestorOf(Ancestor, eugenie), Ancestors).
+Ancestors = [andrew, elizabeth, george, mum, philip, sarah].
